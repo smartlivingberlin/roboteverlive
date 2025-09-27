@@ -1,0 +1,11 @@
+{
+  "name": "SmartAssist Robotics",
+  "short_name": "SmartAssist",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0e1420",
+  "theme_color": "#4e8cff",
+  "icons": [
+    {"src": "https://fav.farm/🤖", "sizes": "any", "type": "image/png"}
+  ]
+}

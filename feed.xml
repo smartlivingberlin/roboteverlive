@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>SmartAssist Robotics – News</title>
+  <link>https://smartlivingberlin.github.io/roboteverlive/news.html</link>
+  <description>Assistenz-Robotik & KI: News, Messen, Forschung.</description>
+  <item>
+    <title>China Robot Show 2025 – Service & Pflege im Fokus</title>
+    <link>https://example.com/ciif</link>
+    <description>Viele Demos zu Exoskeletten, Küchen-Assistenz, Telepräsenz.</description>
+    <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>IFR Trendbericht: Rekord-Installationen in Asien</title>
+    <link>https://example.com/ifr</link>
+    <description>China bleibt Leitmarkt – starkes Wachstum bei Service-Robotern.</description>
+    <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Humanoide Demos auf der WRC Beijing</title>
+    <link>https://example.com/wrc</link>
+    <description>Sport- und Pflege-Szenarien, neue Sensorik & Greifer.</description>
+    <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+  </item>
+</channel>
+</rss>

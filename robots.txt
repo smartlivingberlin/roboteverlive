@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smartlivingberlin.github.io/roboteverlive/sitemap.xml
