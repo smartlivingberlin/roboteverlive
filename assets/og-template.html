@@ -1,0 +1,34 @@
+<!doctype html><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:local("Inter"),local("Arial")}
+:root{--bg:#0e1420;--fg:#e9eef5;--brand:#6aa8ff}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif}
+.wrap{width:1200px;height:630px;display:flex;align-items:center;justify-content:space-between;padding:48px;box-sizing:border-box}
+.left{max-width:650px}
+h1{font-size:64px;line-height:1.05;margin:0 0 16px}
+h2{font-size:28px;color:#aab4c3;margin:0 0 18px}
+.tags span{display:inline-block;border:1px solid #223049;border-radius:999px;padding:6px 12px;margin:4px;font-size:20px}
+.brand{margin-top:12px;font-size:22px;color:#aab4c3}
+.logo{position:absolute;left:48px;top:36px;font-weight:700;color:var(--brand);letter-spacing:.5px}
+.right img{width:440px;height:440px;object-fit:cover;border:10px solid #223049;border-radius:24px;box-shadow:0 18px 60px rgba(0,0,0,.45)}
+.footer{position:absolute;left:48px;bottom:36px;color:#7ea2ff;font-size:22px}
+</style>
+<div class="wrap">
+  <div class="logo">Roboteverlive</div>
+  <div class="left">
+    <h1 id="title">Produkt</h1>
+    <h2 id="subtitle">Assistenz-Robotik & KI</h2>
+    <div class="tags" id="tags"></div>
+    <div class="brand" id="brand"></div>
+  </div>
+  <div class="right"><img id="pic" src=""></div>
+  <div class="footer">roboteverlive • smartlivingberlin.github.io/roboteverlive</div>
+</div>
+<script>
+const qp=new URLSearchParams(location.search);
+document.getElementById('title').textContent=qp.get('title')||'Produkt';
+document.getElementById('subtitle').textContent=qp.get('subtitle')||'Assistenz-Robotik & KI';
+document.getElementById('brand').textContent=qp.get('brand')||'';
+document.getElementById('pic').src=qp.get('image')||'https://picsum.photos/900/900';
+document.getElementById('tags').innerHTML=(qp.get('tags')||'').split(',').filter(Boolean).map(t=>`<span>${t}</span>`).join('');
+</script>

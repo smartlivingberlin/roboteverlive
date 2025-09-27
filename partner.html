@@ -39,57 +39,23 @@
 </header>
 
 <main class="container pb-5">
-  <div class="row g-3">
-    <div class="col-md-4" data-aos="fade-up">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5><i class="bi bi-patch-check"></i> Hersteller</h5>
-          <p>Produktdaten, Zertifikate, Medien, Ansprechpartner – wir listen & verlinken.</p>
-          <span class="badge badge-soft">CE</span> <span class="badge badge-soft">FDA</span> <span class="badge badge-soft">ISO</span>
-        </div>
-      </div>
+  <div class="row g-2 align-items-end mb-3">
+    <div class="col-md-6">
+      <label class="form-label">Suche</label>
+      <input id="pQuery" class="form-control" placeholder="Name, Region, Tag…">
     </div>
-    <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5><i class="bi bi-building"></i> Institute</h5>
-          <p>Forschung, Studien, Patente – sichtbarer werden, Talente & Partner finden.</p>
-          <span class="badge badge-soft">Open Access</span> <span class="badge badge-soft">Preprint</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5><i class="bi bi-people"></i> Händler</h5>
-          <p>Katalog-Sync & Verlinkung – später Leads & Programme (ohne Lagerhaltung).</p>
-          <span class="badge badge-soft">CSV</span> <span class="badge badge-soft">API</span>
-        </div>
-      </div>
+    <div class="col-md-3">
+      <label class="form-label">Typ</label>
+      <select id="pFilter" class="form-select">
+        <option value="">Alle</option>
+        <option>Händler</option>
+        <option>Marktplatz</option>
+        <option>Hersteller</option>
+      </select>
     </div>
   </div>
-
-  <div class="rounded p-4 mt-4" style="background:var(--card); border:1px solid var(--border)" data-aos="zoom-in">
-    <h5>Ablauf (kostenfrei in der Basis)</h5>
-    <ol class="mb-3">
-      <li>Kontakt aufnehmen</li>
-      <li>Daten liefern (Kurztext, Kategorie, Link, Bild)</li>
-      <li>Prüfung & Veröffentlichung im Katalog</li>
-    </ol>
-    <a class="btn btn-gradient text-white" href="kontakt.html"><i class="bi bi-envelope"></i> Jetzt Kontakt aufnehmen</a>
-  </div>
+  <div id="partnersBox" class="row g-3"></div>
 </main>
-
 <footer class="text-center text-muted py-4 border-top">© 2025 SmartAssist Robotics</footer>
-
-<div class="sticky-actions">
-  <button class="fab" onclick="backToTop()" title="Nach oben"><i class="bi bi-arrow-up"></i></button>
-  <button class="fab" onclick="toggleTheme()" title="Hell/Dunkel"><i id="themeIcon" class="bi"></i></button>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/lang.js"></script>
-</body>
-</html>
+<script src="assets/partners.js"></script>
+</body></html>
