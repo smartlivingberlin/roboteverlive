@@ -1,13 +1,633 @@
 [
-  {"name":"HAL (Lower Limb)","brand":"CYBERDYNE","category":"Gesundheit & Reha","helps":"Exoskelett für Gehtraining via bioelektrische Signale.","region":"JP/EU","price_range":"€€€","link":"https://www.cyberdyne.jp/english/products/HAL/index.html","image":"https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1200&auto=format","tags":["Exoskelett","Reha","Pflege"]},
-  {"name":"ReWalk Personal","brand":"Lifeward","category":"Gesundheit & Reha","helps":"Exoskelett für Querschnittgelähmte.","region":"Global","price_range":"€€€","link":"https://golifeward.com/","image":"https://images.unsplash.com/photo-1581093588401-16ec3a2353a4?q=80&w=1200&auto=format","tags":["Exoskelett","Mobilität"]},
-  {"name":"EksoNR","brand":"Ekso Bionics","category":"Neuro-Reha","helps":"FDA-cleared Exoskelett (Stroke, MS, SCI).","region":"US/EU","price_range":"€€€","link":"https://eksobionics.com/eksonr/","image":"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format","tags":["Klinik","Neuro"]},
-  {"name":"OrCam MyEye","brand":"OrCam","category":"Sehhilfe","helps":"KI-Leser: Text, Gesichter, Objekte erkennen.","region":"Global","price_range":"€€","link":"https://www.orcam.com/en-us/home","image":"https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1200&auto=format","tags":["Sehen","KI","Wearable"]},
-  {"name":"temi","brand":"Robotemi","category":"Service & Home","helps":"Telepräsenz & Service-Robotik.","region":"Global","price_range":"€€","link":"https://www.robotemi.com/robots/","image":"https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format","tags":["Telepräsenz","Service"]},
-  {"name":"Double 3","brand":"Double Robotics","category":"Telepräsenz","helps":"Selbstfahrender Telepräsenz-Roboter.","region":"Global","price_range":"€€","link":"https://www.doublerobotics.com/double3.html","image":"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format","tags":["Remote","Bildung"]},
-  {"name":"Labrador Retriever","brand":"Labrador Systems","category":"Assistenz Zuhause","helps":"Mobiler Servierroboter für Pflege & Alltag.","region":"US","price_range":"€€","link":"https://labradorsystems.com/products/","image":"https://images.unsplash.com/photo-1616627988821-5a0f28c52c41?q=80&w=1200&auto=format","tags":["Haushalt","Pflege"]},
-  {"name":"Moley A-AiR","brand":"Moley Robotics","category":"Küche","helps":"Kochroboter mit zwei Armen, Rezeptführung.","region":"EU/UK","price_range":"€€€","link":"https://www.moley.com/a-air-kitchen/","image":"https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1200&auto=format","tags":["Küche","Luxus"]},
-  {"name":"CyberDog 2","brand":"Xiaomi","category":"Forschung & Bildung","helps":"Vierbeiniger Developer-Roboter.","region":"CN/EU","price_range":"€€","link":"https://www.mi.com/cyberdog2","image":"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format","tags":["Quadruped","Developer"]},
-  {"name":"ElliQ","brand":"Intuition Robotics","category":"Senioren","helps":"KI-Begleitroboter mit Caregiver-App.","region":"US","price_range":"€€","link":"https://elliq.com/","image":"https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format","tags":["Companion","Gesundheit"]},
-  {"name":"Gita","brand":"Piaggio Fast Forward","category":"Follow-Me Transport","helps":"Lastenroboter für Einkäufe & Gepäck.","region":"US/EU","price_range":"€€","link":"https://www.piaggiofastforward.com/","image":"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format","tags":["Transport","Outdoor"]}
+  {
+    "name": "HAL (Lower Limb)",
+    "brand": "CYBERDYNE",
+    "category": "Gesundheit & Reha",
+    "helps": "Exoskelett für Gehtraining via bioelektrische Signale.",
+    "region": "JP/EU",
+    "price_range": "€€€",
+    "link": "https://www.cyberdyne.jp/english/products/HAL/index.html",
+    "image": "https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1200&auto=format",
+    "tags": [
+      "Exoskelett",
+      "Reha",
+      "Pflege"
+    ],
+    "slug": "hal-lower-limb",
+    "specs": {
+      "Kategorie": "Gesundheit & Reha",
+      "Region": "JP/EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "CYBERDYNE",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.cyberdyne.jp/english/products/HAL/index.html"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "ReWalk Personal",
+    "brand": "Lifeward",
+    "category": "Gesundheit & Reha",
+    "helps": "Exoskelett für Querschnittgelähmte.",
+    "region": "Global",
+    "price_range": "€€€",
+    "link": "https://golifeward.com/",
+    "image": "https://images.unsplash.com/photo-1581093588401-16ec3a2353a4?q=80&w=1200&auto=format",
+    "tags": [
+      "Exoskelett",
+      "Mobilität"
+    ],
+    "slug": "rewalk-personal",
+    "specs": {
+      "Kategorie": "Gesundheit & Reha",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Lifeward",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://golifeward.com/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1581093588401-16ec3a2353a4?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1581093588401-16ec3a2353a4?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "EksoNR",
+    "brand": "Ekso Bionics",
+    "category": "Neuro-Reha",
+    "helps": "FDA-cleared Exoskelett (Stroke, MS, SCI).",
+    "region": "US/EU",
+    "price_range": "€€€",
+    "link": "https://eksobionics.com/eksonr/",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format",
+    "tags": [
+      "Klinik",
+      "Neuro"
+    ],
+    "slug": "eksonr",
+    "specs": {
+      "Kategorie": "Neuro-Reha",
+      "Region": "US/EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Ekso Bionics",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://eksobionics.com/eksonr/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "OrCam MyEye",
+    "brand": "OrCam",
+    "category": "Sehhilfe",
+    "helps": "KI-Leser: Text, Gesichter, Objekte erkennen.",
+    "region": "Global",
+    "price_range": "€€",
+    "link": "https://www.orcam.com/en-us/home",
+    "image": "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1200&auto=format",
+    "tags": [
+      "Sehen",
+      "KI",
+      "Wearable"
+    ],
+    "slug": "orcam-myeye",
+    "specs": {
+      "Kategorie": "Sehhilfe",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "OrCam",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.orcam.com/en-us/home"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "temi",
+    "brand": "Robotemi",
+    "category": "Service & Home",
+    "helps": "Telepräsenz & Service-Robotik.",
+    "region": "Global",
+    "price_range": "€€",
+    "link": "https://www.robotemi.com/robots/",
+    "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format",
+    "tags": [
+      "Telepräsenz",
+      "Service"
+    ],
+    "slug": "temi",
+    "specs": {
+      "Kategorie": "Service & Home",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Robotemi",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.robotemi.com/robots/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Double 3",
+    "brand": "Double Robotics",
+    "category": "Telepräsenz",
+    "helps": "Selbstfahrender Telepräsenz-Roboter.",
+    "region": "Global",
+    "price_range": "€€",
+    "link": "https://www.doublerobotics.com/double3.html",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format",
+    "tags": [
+      "Remote",
+      "Bildung"
+    ],
+    "slug": "double-3",
+    "specs": {
+      "Kategorie": "Telepräsenz",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Double Robotics",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.doublerobotics.com/double3.html"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Labrador Retriever",
+    "brand": "Labrador Systems",
+    "category": "Assistenz Zuhause",
+    "helps": "Mobiler Servierroboter für Pflege & Alltag.",
+    "region": "US",
+    "price_range": "€€",
+    "link": "https://labradorsystems.com/products/",
+    "image": "https://images.unsplash.com/photo-1616627988821-5a0f28c52c41?q=80&w=1200&auto=format",
+    "tags": [
+      "Haushalt",
+      "Pflege"
+    ],
+    "slug": "labrador-retriever",
+    "specs": {
+      "Kategorie": "Assistenz Zuhause",
+      "Region": "US",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Labrador Systems",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://labradorsystems.com/products/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1616627988821-5a0f28c52c41?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1616627988821-5a0f28c52c41?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Moley A-AiR",
+    "brand": "Moley Robotics",
+    "category": "Küche",
+    "helps": "Kochroboter mit zwei Armen, Rezeptführung.",
+    "region": "EU/UK",
+    "price_range": "€€€",
+    "link": "https://www.moley.com/a-air-kitchen/",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1200&auto=format",
+    "tags": [
+      "Küche",
+      "Luxus"
+    ],
+    "slug": "moley-a-air",
+    "specs": {
+      "Kategorie": "Küche",
+      "Region": "EU/UK",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Moley Robotics",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.moley.com/a-air-kitchen/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "CyberDog 2",
+    "brand": "Xiaomi",
+    "category": "Forschung & Bildung",
+    "helps": "Vierbeiniger Developer-Roboter.",
+    "region": "CN/EU",
+    "price_range": "€€",
+    "link": "https://www.mi.com/cyberdog2",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format",
+    "tags": [
+      "Quadruped",
+      "Developer"
+    ],
+    "slug": "cyberdog-2",
+    "specs": {
+      "Kategorie": "Forschung & Bildung",
+      "Region": "CN/EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Xiaomi",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.mi.com/cyberdog2"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "ElliQ",
+    "brand": "Intuition Robotics",
+    "category": "Senioren",
+    "helps": "KI-Begleitroboter mit Caregiver-App.",
+    "region": "US",
+    "price_range": "€€",
+    "link": "https://elliq.com/",
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format",
+    "tags": [
+      "Companion",
+      "Gesundheit"
+    ],
+    "slug": "elliq",
+    "specs": {
+      "Kategorie": "Senioren",
+      "Region": "US",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Intuition Robotics",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://elliq.com/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Gita",
+    "brand": "Piaggio Fast Forward",
+    "category": "Follow-Me Transport",
+    "helps": "Lastenroboter für Einkäufe & Gepäck.",
+    "region": "US/EU",
+    "price_range": "€€",
+    "link": "https://www.piaggiofastforward.com/",
+    "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format",
+    "tags": [
+      "Transport",
+      "Outdoor"
+    ],
+    "slug": "gita",
+    "specs": {
+      "Kategorie": "Follow-Me Transport",
+      "Region": "US/EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat/Klinik",
+      "Steuerung": "App/Touch/Voice"
+    },
+    "vendor": "Piaggio Fast Forward",
+    "marketplaces": [
+      {
+        "label": "Hersteller",
+        "url": "https://www.piaggiofastforward.com/"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Wand-Assist Greifer",
+    "brand": "Franka/UR-Ecosystem",
+    "category": "Manipulator & Greifer",
+    "helps": "Küchen-/Werkstatt-Hilfe: KI-Greifer, Objekt-Erkennung.",
+    "region": "EU",
+    "price_range": "€€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1581092334674-1e7eab06f5b0?q=80&w=1200&auto=format",
+    "tags": [
+      "Greifer",
+      "Küche",
+      "Werkstatt"
+    ],
+    "slug": "wand-assist-greifer",
+    "specs": {
+      "Kategorie": "Manipulator & Greifer",
+      "Region": "EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "Franka/UR-Ecosystem",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1581092334674-1e7eab06f5b0?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1581092334674-1e7eab06f5b0?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Swim-Assist Trainer",
+    "brand": "Start-up",
+    "category": "Sport & Reha",
+    "helps": "Schwimmtechnik-Analyse, Vibrationsfeedback.",
+    "region": "EU",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1507099985932-87a4520ed1dd?q=80&w=1200&auto=format",
+    "tags": [
+      "Sport",
+      "Analyse"
+    ],
+    "slug": "swim-assist-trainer",
+    "specs": {
+      "Kategorie": "Sport & Reha",
+      "Region": "EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "Start-up",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507099985932-87a4520ed1dd?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1507099985932-87a4520ed1dd?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Smart-Cane Lidar",
+    "brand": "Assistive Labs",
+    "category": "Mobilität & Sehen",
+    "helps": "Lidar-Stock mit haptischem Feedback.",
+    "region": "EU",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1544551763-7ef420be2e8e?q=80&w=1200&auto=format",
+    "tags": [
+      "Sehen",
+      "Mobilität"
+    ],
+    "slug": "smart-cane-lidar",
+    "specs": {
+      "Kategorie": "Mobilität & Sehen",
+      "Region": "EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "Assistive Labs",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1544551763-7ef420be2e8e?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1544551763-7ef420be2e8e?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Kitchen-Prep Bot",
+    "brand": "Home Robotics",
+    "category": "Küche & Haushalt",
+    "helps": "Schnitt-/Sortierhilfe, Rezept-KI.",
+    "region": "US/EU",
+    "price_range": "€€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format",
+    "tags": [
+      "Küche",
+      "Assistenz"
+    ],
+    "slug": "kitchen-prep-bot",
+    "specs": {
+      "Kategorie": "Küche & Haushalt",
+      "Region": "US/EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "Home Robotics",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Telepresence-Lite",
+    "brand": "EduBots",
+    "category": "Bildung",
+    "helps": "Günstige Telepräsenz für Schule/Uni.",
+    "region": "Global",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format",
+    "tags": [
+      "Schule",
+      "Budget"
+    ],
+    "slug": "telepresence-lite",
+    "specs": {
+      "Kategorie": "Bildung",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "EduBots",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Care-Companion Mini",
+    "brand": "CompanionTech",
+    "category": "Senioren",
+    "helps": "Gespräch, Erinnerung, Vitalzeichen-Reminder.",
+    "region": "EU",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=1200&auto=format",
+    "tags": [
+      "Aging",
+      "Begleitung"
+    ],
+    "slug": "care-companion-mini",
+    "specs": {
+      "Kategorie": "Senioren",
+      "Region": "EU",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "CompanionTech",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49b?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "Vision-Reader Edge",
+    "brand": "EdgeAI",
+    "category": "Sehhilfe",
+    "helps": "Offline-KI für Text-to-Speech unterwegs.",
+    "region": "Global",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format",
+    "tags": [
+      "Edge AI",
+      "OCR"
+    ],
+    "slug": "vision-reader-edge",
+    "specs": {
+      "Kategorie": "Sehhilfe",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "EdgeAI",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format"
+    ]
+  },
+  {
+    "name": "ROS Education Kit",
+    "brand": "Open Robotics",
+    "category": "Bildung & Maker",
+    "helps": "ROS-Lernkit mit Sensorik und Beispiel-Apps.",
+    "region": "Global",
+    "price_range": "€",
+    "link": "https://example.com",
+    "image": "https://images.unsplash.com/photo-1581091215367-59ab6b88a3d7?q=80&w=1200&auto=format",
+    "tags": [
+      "ROS",
+      "Maker",
+      "Education"
+    ],
+    "slug": "ros-education-kit",
+    "specs": {
+      "Kategorie": "Bildung & Maker",
+      "Region": "Global",
+      "Energie": "Akku",
+      "Nutzer": "Privat",
+      "Steuerung": "App/Voice"
+    },
+    "vendor": "Open Robotics",
+    "marketplaces": [
+      {
+        "label": "Info",
+        "url": "https://example.com"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1581091215367-59ab6b88a3d7?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1581091215367-59ab6b88a3d7?q=80&w=1200&auto=format"
+    ]
+  }
 ]
