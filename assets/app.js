@@ -45,7 +45,7 @@ function cardHTML(x, idx){
   const tags = (x.tags||[]).map(t=>`<span class="badge badge-soft me-1">${t}</span>`).join(' ');
   return `
   <div class="col-12 col-md-6 col-lg-4" data-idx="${idx}">
-    <div class="card h-100" data-aos="fade-up">
+    <div class="card h-100 tilt shadow-soft" data-aos="fade-up">
       <img src="${img}" alt="${x.name}" class="card-img-top" loading="lazy">
       <div class="card-body">
         <h5 class="card-title">${x.name}</h5>
@@ -63,60 +63,14 @@ function cardHTML(x, idx){
 
 function renderGrid(){
   applyFilters();
-  const grid = $('#cards'); grid.innerHTML = state.filtered.map((x,i)=>cardHTML(x, state.items.indexOf(x))).join('');
-  $('#count').textContent = state.filtered.length;
-  AOS.refresh();
+  const grid = document.getElementById("cards");
+  grid.innerHTML = Array.from({length:6}).map(()=>`<div class=\"mitem\"><div class=\"card skeleton\"></div></div>`).join("");
+  setTimeout(()=>{
+    grid.innerHTML = state.filtered.map((x,i)=>{
+      const idx = state.items.indexOf(x);
+      return cardHTML(x, idx).replace("<div class=\"col-12 col-md-6 col-lg-4\"","<div class=\"mitem\"");
+    }).join("");
+    AOS.refresh();
+  }, 150);
+  document.getElementById("count").textContent = state.filtered.length;
 }
-
-function openDetails(idx){
-  const x = state.items[idx];
-  const img = x.image || 'https://picsum.photos/seed/'+encodeURIComponent(x.name)+'/900/600';
-  $('#modalTitle').textContent = x.name;
-  $('#modalBody').innerHTML = `
-    <img src="${img}" class="img-fluid rounded mb-3" alt="${x.name}">
-    <p><b>Kategorie:</b> ${x.category} &nbsp; <b>Preis:</b> ${x.price_range||'–'} &nbsp; <b>Region:</b> ${x.region||'–'}</p>
-    <p>${x.helps||''}</p>
-    ${(x.tags||[]).map(t=>`<span class="badge rounded-pill text-bg-light me-1">${t}</span>`).join(' ')}
-  `;
-  const btn = $('#modalGo'); 
-  if(x.link){ btn.href = x.link; btn.classList.remove('disabled'); btn.setAttribute('aria-disabled','false'); }
-  else{ btn.href='#'; btn.classList.add('disabled'); btn.setAttribute('aria-disabled','true'); }
-  new bootstrap.Modal('#detailModal').show();
-}
-
-function setupControls(){
-  $('#btnSearch')?.addEventListener('click', ()=>{ state.query = $('#q').value; renderGrid(); });
-  $('#q')?.addEventListener('keyup', (e)=>{ if(e.key==='Enter'){ state.query = e.target.value; renderGrid(); } });
-  $('#sort')?.addEventListener('change', (e)=>{ state.sort = e.target.value; renderGrid(); });
-}
-
-async function initCatalog(){
-  if(!$('#cards')) return;
-  state.items = await loadJSON('data/products.json');
-  renderTags();
-  renderGrid();
-  setupControls();
-}
-
-function initTicker(){
-  const el = $('#tickerText');
-  if(!el) return;
-  const msgs = [
-    'China Robot Show • Shanghai • Sep 2025',
-    'IFR Trendbericht: Rekordinstallationen',
-    'Humanoide Demos • WRC Beijing',
-    'Exoskelette für Alltag & Pflege'
-  ];
-  el.innerHTML = msgs.join(' ⬤ ');
-}
-
-function backToTop(){
-  window.scrollTo({top:0, behavior:'smooth'});
-}
-
-window.addEventListener('DOMContentLoaded', ()=>{
-  initTicker();
-  initCatalog();
-  updateThemeUI();
-  AOS.init({ once:true, duration:550, easing:'ease-out' });
-});
