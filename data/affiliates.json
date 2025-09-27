@@ -1,0 +1,8 @@
+[
+  {"host":"www.robotshop.com","param":"aff","id":"demo-robotshop"},
+  {"host":"www.trossenrobotics.com","param":"ref","id":"demo-trossen"},
+  {"host":"www.conrad.de","param":"affiliate","id":"demo-conrad"},
+  {"host":"www.alibaba.com","param":"aff","id":"demo-alibaba"},
+  {"host":"global.jd.com","param":"aff","id":"demo-jd"},
+  {"host":"www.amazon.de","param":"tag","id":"demoamazontag-21"}
+]
