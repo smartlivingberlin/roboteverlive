@@ -1,0 +1,50 @@
+[
+  {
+    "slug":"pflege-exoskelette-alltag",
+    "title":"Wie Exoskelette Pflegekräften den Alltag erleichtern",
+    "author":"SmartAssist Team",
+    "date":"2025-09-27",
+    "image":"https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1600&auto=format",
+    "excerpt":"Vom Heben bis zum Gehen: reale Use-Cases, klinische Studien und Kosten-Nutzen.",
+    "body":[
+      "Pflegekräfte tragen körperlich schwer. Moderne Exoskelette reduzieren Lasten und beugen Erschöpfung vor.",
+      "Klinische Studien zeigen >20% geringere Muskelbelastung (je nach Setting).",
+      "Worauf achten? Passform, Akkulaufzeit, Training und CE/MDR-Klasse."
+    ],
+    "links":[
+      {"label":"Katalog: Exoskelette","url":"katalog.html"},
+      {"label":"IFR: Health Robotics","url":"https://ifr.org/news"}
+    ],
+    "tags":["Pflege","Exoskelett","Arbeitsgesundheit"]
+  },
+  {
+    "slug":"telepraesenz-schule-klinik",
+    "title":"Telepräsenz in Schule & Klinik: so klappt es wirklich",
+    "author":"SmartAssist Team",
+    "date":"2025-09-27",
+    "image":"https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format",
+    "excerpt":"Praxisleitfaden: Räume, WLAN, Kamera-Winkel, Datenschutz, Budget.",
+    "body":[
+      "Telepräsenz schafft Teilhabe: Unterricht, Visite, Familienkontakte.",
+      "Pilotphase in kleinen Gruppen, klare ‚Use-Case-Owner‘, Logging & Support.",
+      "Budget-Tipp: Abo-Modelle (RaaS) mit Service-Level."
+    ],
+    "links":[{"label":"Geräte vergleichen","url":"compare.html"}],
+    "tags":["Bildung","Telemedizin","RaaS"]
+  },
+  {
+    "slug":"edge-ai-fuer-roboter",
+    "title":"Edge-AI für Roboter: warum on-device Intelligenz zählt",
+    "author":"SmartAssist Team",
+    "date":"2025-09-27",
+    "image":"https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format",
+    "excerpt":"Latenz, Datenschutz, Robustheit – die drei Gründe für lokale Modelle.",
+    "body":[
+      "Edge-AI minimiert Latenzen, hält Systeme auch offline funktionsfähig.",
+      "Sensorfusion (Kamera, Lidar, IMU) + kleine Modelle = stabile Autonomie.",
+      "Dev-Tipp: ROS 2, ONNX Runtime, Hardware-Beschleuniger (NPU/TPU)."
+    ],
+    "links":[{"label":"News zu Edge-AI","url":"news.html"}],
+    "tags":["Edge AI","ROS2","Sensorfusion"]
+  }
+]
