@@ -22,30 +22,11 @@
 </nav>
 <header class="container py-4">
   <h1 class="h3 fw-bold mb-1">Video-Galerie</h1>
-  <p class="text-muted">Demos, Tests, Messen – kuratiert und eingebettet von YouTube.</p>
+  <p class="text-muted">Klicke auf eine Kachel, um das Video direkt auf YouTube zu öffnen.</p>
 </header>
 <main class="container pb-5">
   <div class="row g-3" id="vidGrid"></div>
 </main>
 <footer class="text-center text-muted py-4 border-top">© 2025 SmartAssist Robotics</footer>
-<script>
-async function load(){
-  const res = await fetch('data/videos.json',{cache:'no-store'});
-  const vids = await res.json();
-  const g = document.getElementById('vidGrid');
-  g.innerHTML = vids.map(v=>`
-    <div class="col-md-6 col-lg-4">
-      <div class="card h-100">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube-nocookie.com/embed/${v.id}" title="${v.title}" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="card-body">
-          <div class="fw-bold">${v.title}</div>
-          <div class="mt-2">${(v.tags||[]).map(t=>`<span class="badge text-bg-light me-1">${t}</span>`).join('')}</div>
-        </div>
-      </div>
-    </div>`).join('');
-}
-document.addEventListener('DOMContentLoaded', load);
-</script>
+<script src="assets/videos.js"></script>
 </body></html>
