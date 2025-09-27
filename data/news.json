@@ -1,5 +1,11 @@
 [
   {
+    "title": "Testeintrag",
+    "date": "2025-09-28",
+    "link": "https://example.com",
+    "summary": "Kurztext für News"
+  },
+  {
     "title": "Pilotprojekt Pflegeheim Berlin",
     "date": "2025-10-02",
     "link": "https://beispiel.de",
