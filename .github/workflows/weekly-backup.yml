@@ -1,0 +1,20 @@
+name: Weekly Backup
+on:
+  schedule: [{ cron: "0 3 * * 1" }]  # Mo 03:00 UTC
+  workflow_dispatch:
+jobs:
+  zip-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create archive
+        run: |
+          zip -r site.zip . -x ".git/*"
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: site.zip
+          tag_name: backup-${{ github.run_id }}
+          name: "Backup ${{ github.run_id }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,12 @@
+name: Link Check
+on: [push]
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --exclude-mail --no-progress --verbose .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
