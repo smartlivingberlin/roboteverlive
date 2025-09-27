@@ -1,0 +1,31 @@
+name: Backup ZIP to Releases
+on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: "10 3 * * *"   # täglich 03:10 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  zip-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Build ZIP
+        run: |
+          TS=$(date -u +'%Y%m%d-%H%M%S')
+          NAME="backup-${TS}.zip"
+          mkdir -p backup
+          git archive --format=zip --output "backup/${NAME}" HEAD
+          echo "ZIP_NAME=${NAME}" >> $GITHUB_ENV
+      - name: Create/Update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "backup-${{ env.ZIP_NAME }}"
+          name: "Backup ${{ env.ZIP_NAME }}"
+          draft: false
+          prerelease: false
+          files: |
+            backup/${{ env.ZIP_NAME }}
