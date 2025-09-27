@@ -1,18 +1,20 @@
 async function loadVideos(){
   const grid = document.getElementById('vidGrid');
-  const res = await fetch('data/videos.json',{cache:'no-store'});
-  const vids = await res.json();
+  let vids=[];
+  try{
+    const res = await fetch('data/videos.json?cachebust='+Date.now());
+    vids = await res.json();
+  }catch(e){ console.error(e); vids=[]; }
   grid.innerHTML = vids.map(v=>{
-    const thumb = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`;
-    const url = `https://www.youtube.com/watch?v=${v.id}`;
+    const id = v.videoId || v.id;
+    const thumb = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    const url = `https://www.youtube.com/watch?v=${id}`;
     return `
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
+        <div class="card h-100 shadow-sm">
           <div class="position-relative" style="cursor:pointer" onclick="window.open('${url}','_blank','noopener')">
             <img src="${thumb}" class="card-img-top" alt="${v.title}" style="height:200px;object-fit:cover">
-            <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 rounded-circle p-3">
-              ▶
-            </div>
+            <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 rounded-circle p-3 text-white fw-bold">▶</div>
           </div>
           <div class="card-body">
             <div class="fw-bold">${v.title}</div>

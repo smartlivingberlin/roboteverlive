@@ -44,13 +44,23 @@
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
     <div id="nav" class="collapse navbar-collapse">
       <div class="navbar-nav ms-auto">
-      <a class="nav-link" href="katalog.html">Katalog</a>
+        <a class="nav-link" href="katalog.html">Katalog</a>
       <a class="nav-link" href="news.html">News</a>
       <a class="nav-link" href="trends.html">Trends</a>
       <a class="nav-link" href="stories.html">Stories</a>
       <a class="nav-link" href="videos.html">Videos</a>
       <a class="nav-link" href="partner.html">Partner</a>
       <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="news.html">News</a>
+        <a class="nav-link" href="trends.html">Trends</a>
+      <a class="nav-link" href="stories.html">Stories</a>
+      <a class="nav-link" href="videos.html">Videos</a>
+        <a class="nav-link" href="china.html">China</a>
+        <a class="nav-link" href="themen.html">Themen</a>
+        <a class="nav-link" href="partner.html">Partner</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <button class="btn btn-sm btn-outline-secondary ms-2" onclick="toggleTheme()"><i id="themeIcon" class="bi"></i></button>
+      </div>
     </div>
   </div>
 </nav>
@@ -182,6 +192,5 @@
   text-shadow:0 2px 6px rgba(0,0,0,.35)}
 </style>
 <!-- END:FANCY_BUTTONS -->
-<script src="assets/chatbot.js"></script>
 </body>
 </html>
