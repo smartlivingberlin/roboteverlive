@@ -1,0 +1,10 @@
+.img-zoom { transition: transform .35s ease, filter .35s ease; }
+.img-zoom:hover { transform: scale(1.04); filter: brightness(1.05); }
+.card-zoom:hover .card-img-top { transform: scale(1.05); }
+.card-zoom .card-img-top { transition: transform .35s ease; }
+.hero-cover { background: #0b0f14 url('img/placeholder.jpg') center/cover no-repeat; min-height: 340px; border-radius: 12px; position: relative; overflow: hidden; }
+.hero-overlay { position: absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55)); }
+.hero-inner { position: relative; z-index: 2; color: #fff; padding: 40px 24px; }
+.link-stretch { position: relative; z-index: 3; }
+.object-cover { object-fit: cover; }
+.h-220 { height: 220px; }

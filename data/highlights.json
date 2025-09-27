@@ -1,18 +1,30 @@
 {
-  "hero": "https://images.unsplash.com/photo-1581091215367-59ab6b6c02aa?auto=format&fit=crop&w=1200&q=80",
+  "hero": "https://images.unsplash.com/photo-1581091012184-5c64a5d46a6d?auto=format&fit=crop&w=1600&q=80",
   "cards": [
     {
       "title": "Service & Pflege",
-      "img": "https://images.unsplash.com/photo-1581091870622-7c92d20c41d1?auto=format&fit=crop&w=600&q=80"
+      "text": "Assistenz- und Telepräsenzroboter im Alltag.",
+      "img": "https://images.unsplash.com/photo-1581092334674-1e7eab06f5b0?auto=format&fit=crop&w=900&q=80",
+      "link": "katalog.html"
     },
     {
       "title": "Industrie & Logistik",
-      "img": "https://images.unsplash.com/photo-1581092911085-5c84a1edb6c0?auto=format&fit=crop&w=600&q=80"
+      "text": "AMR, Greifer, Pick&Place, Vision.",
+      "img": "https://images.unsplash.com/photo-1581092911085-5c84a1edb6c0?auto=format&fit=crop&w=900&q=80",
+      "link": "trends.html"
     },
     {
       "title": "Smart Living",
-      "img": "https://images.unsplash.com/photo-1603398938378-76f4d1f2d44a?auto=format&fit=crop&w=600&q=80"
+      "text": "Kochroboter, Haushaltshelfer, Companion.",
+      "img": "https://images.unsplash.com/photo-1603398938378-76f4d1f2d44a?auto=format&fit=crop&w=900&q=80",
+      "link": "videos.html"
     }
   ],
-  "news": "https://images.unsplash.com/photo-1624705002803-3e0e6d56c3fb?auto=format&fit=crop&w=1200&q=80"
+  "newsHero": "https://images.unsplash.com/photo-1605901309584-818e25960a8b?auto=format&fit=crop&w=1600&q=80",
+  "trends": [
+    "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=900&q=80"
+  ]
 }

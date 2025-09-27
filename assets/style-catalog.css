@@ -12,3 +12,7 @@
   height: 220px;
   object-fit: cover;
 }
+
+/* Zoom für Katalog-Karten */
+.card-zoom .card-img-top{ transition: transform .35s ease; }
+.card-zoom:hover .card-img-top{ transform: scale(1.05); }
