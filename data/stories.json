@@ -1,50 +1,47 @@
 [
   {
-    "slug":"pflege-exoskelette-alltag",
-    "title":"Wie Exoskelette Pflegekräften den Alltag erleichtern",
-    "author":"SmartAssist Team",
-    "date":"2025-09-27",
-    "image":"https://images.unsplash.com/photo-1581090700227-4c4f91e3eac3?q=80&w=1600&auto=format",
-    "excerpt":"Vom Heben bis zum Gehen: reale Use-Cases, klinische Studien und Kosten-Nutzen.",
-    "body":[
-      "Pflegekräfte tragen körperlich schwer. Moderne Exoskelette reduzieren Lasten und beugen Erschöpfung vor.",
-      "Klinische Studien zeigen >20% geringere Muskelbelastung (je nach Setting).",
-      "Worauf achten? Passform, Akkulaufzeit, Training und CE/MDR-Klasse."
+    "slug": "pflege-exoskelette",
+    "title": "Exoskelette in der Pflege",
+    "author": "SmartAssist Redaktion",
+    "date": "2025-09-20",
+    "image": "https://images.unsplash.com/photo-1581091012184-5c64a5d46a6d?auto=format&fit=crop&w=1200&q=80",
+    "body": [
+      "Exoskelette unterstützen Pflegekräfte beim Heben schwerer Patienten.",
+      "Japan und Europa gelten als Vorreiter bei der Einführung dieser Technologien.",
+      "Studien zeigen: Reduktion der körperlichen Belastung um bis zu 40%."
     ],
-    "links":[
-      {"label":"Katalog: Exoskelette","url":"katalog.html"},
-      {"label":"IFR: Health Robotics","url":"https://ifr.org/news"}
-    ],
-    "tags":["Pflege","Exoskelett","Arbeitsgesundheit"]
+    "links": [
+      {"label": "Studie ansehen", "url": "https://www.ifr.org/research"}
+    ]
   },
   {
-    "slug":"telepraesenz-schule-klinik",
-    "title":"Telepräsenz in Schule & Klinik: so klappt es wirklich",
-    "author":"SmartAssist Team",
-    "date":"2025-09-27",
-    "image":"https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format",
-    "excerpt":"Praxisleitfaden: Räume, WLAN, Kamera-Winkel, Datenschutz, Budget.",
-    "body":[
-      "Telepräsenz schafft Teilhabe: Unterricht, Visite, Familienkontakte.",
-      "Pilotphase in kleinen Gruppen, klare ‚Use-Case-Owner‘, Logging & Support.",
-      "Budget-Tipp: Abo-Modelle (RaaS) mit Service-Level."
+    "slug": "logistik-roboter",
+    "title": "Logistikroboter auf dem Vormarsch",
+    "author": "SmartAssist Redaktion",
+    "date": "2025-09-15",
+    "image": "https://images.unsplash.com/photo-1617687616061-9f9b7c65cbe1?auto=format&fit=crop&w=1200&q=80",
+    "body": [
+      "Automatisierte Lagerhäuser setzen verstärkt auf mobile Transportroboter.",
+      "Amazon Robotics und JD.com treiben die Entwicklung massiv voran.",
+      "Der Markt für Logistikrobotik soll bis 2030 auf über 80 Mrd. USD wachsen."
     ],
-    "links":[{"label":"Geräte vergleichen","url":"compare.html"}],
-    "tags":["Bildung","Telemedizin","RaaS"]
+    "links": [
+      {"label": "Amazon Robotics", "url": "https://www.amazonrobotics.com/"}
+    ]
   },
   {
-    "slug":"edge-ai-fuer-roboter",
-    "title":"Edge-AI für Roboter: warum on-device Intelligenz zählt",
-    "author":"SmartAssist Team",
-    "date":"2025-09-27",
-    "image":"https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format",
-    "excerpt":"Latenz, Datenschutz, Robustheit – die drei Gründe für lokale Modelle.",
-    "body":[
-      "Edge-AI minimiert Latenzen, hält Systeme auch offline funktionsfähig.",
-      "Sensorfusion (Kamera, Lidar, IMU) + kleine Modelle = stabile Autonomie.",
-      "Dev-Tipp: ROS 2, ONNX Runtime, Hardware-Beschleuniger (NPU/TPU)."
+    "slug": "smart-home-roboter",
+    "title": "Roboter im Smart Home",
+    "author": "SmartAssist Redaktion",
+    "date": "2025-09-10",
+    "image": "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1200&q=80",
+    "body": [
+      "Saug- und Service-Roboter gehören bereits zum Alltag vieler Haushalte.",
+      "Neue Generationen kombinieren KI mit Sensorik für bessere Anpassung.",
+      "China und die USA sind die größten Wachstumsmärkte im Consumer-Segment."
     ],
-    "links":[{"label":"News zu Edge-AI","url":"news.html"}],
-    "tags":["Edge AI","ROS2","Sensorfusion"]
+    "links": [
+      {"label": "CES Highlights", "url": "https://ces.tech"}
+    ]
   }
 ]
