@@ -1,6 +1,27 @@
 [
-  {"id":"wlkCQXHEgjA","title":"temi in healthcare","tags":["Service","Telepresence"]},
-  {"id":"9Q3z7g0oC2U","title":"CyberDog Demo (Xiaomi)","tags":["Quadruped","Developer"]},
-  {"id":"p8qzhl6Y4wU","title":"EksoNR Rehab Session","tags":["Reha","Klinik"]},
-  {"id":"l3dS2N9n8Hk","title":"Moley Robotic Kitchen Tour","tags":["Küche","Automation"]}
+  {
+    "title": "Pepper – Service-Robotik",
+    "tags": ["Service", "Interaktion"],
+    "videoId": "4WbqOou0F4Q"
+  },
+  {
+    "title": "Boston Dynamics Spot",
+    "tags": ["Industrie", "Logistik"],
+    "videoId": "tF4DML7FIWk"
+  },
+  {
+    "title": "Temi – Healthcare",
+    "tags": ["Pflege", "Telepräsenz"],
+    "videoId": "V8V6HQGnvZ8"
+  },
+  {
+    "title": "Moley Kitchen Robot",
+    "tags": ["Smart Home", "Küche"],
+    "videoId": "I4kz8uPy5LM"
+  },
+  {
+    "title": "CyberDog – Xiaomi",
+    "tags": ["Consumer", "Entertainment"],
+    "videoId": "XKJaqxH2kTg"
+  }
 ]

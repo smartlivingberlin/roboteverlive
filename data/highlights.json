@@ -1,0 +1,18 @@
+{
+  "hero": "https://images.unsplash.com/photo-1581091215367-59ab6b6c02aa?auto=format&fit=crop&w=1200&q=80",
+  "cards": [
+    {
+      "title": "Service & Pflege",
+      "img": "https://images.unsplash.com/photo-1581091870622-7c92d20c41d1?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "title": "Industrie & Logistik",
+      "img": "https://images.unsplash.com/photo-1581092911085-5c84a1edb6c0?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "title": "Smart Living",
+      "img": "https://images.unsplash.com/photo-1603398938378-76f4d1f2d44a?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "news": "https://images.unsplash.com/photo-1624705002803-3e0e6d56c3fb?auto=format&fit=crop&w=1200&q=80"
+}
