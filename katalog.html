@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Katalog – SmartAssist Robotics</title>
+  <meta name="description" content="Filterbarer Katalog: Assistive Robotik & KI für Alltag, Pflege, Sport, Barrierefreiheit.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">SmartAssist</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link active" href="katalog.html">Katalog</a>
+      <a class="nav-link" href="news.html">News</a>
+      <a class="nav-link" href="partner.html">Partner</a>
+      <a class="nav-link" href="kontakt.html">Kontakt</a>
+      <button class="btn btn-sm btn-outline-secondary ms-2" onclick="toggleTheme()"><i id="themeIcon" class="bi"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="py-4 hero">
+  <div class="container">
+    <h1 class="h3 fw-bold">Katalog – Assistive Technologien</h1>
+    <div class="row g-2 align-items-center mt-2">
+      <div class="col-md-6">
+        <div class="input-group">
+          <input id="q" class="form-control" placeholder="Suche: Gehhilfe, Küche, Seh…">
+          <button id="btnSearch" class="btn btn-gradient text-white"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <select id="sort" class="form-select">
+          <option value="name-asc">Sortierung: Name (A–Z)</option>
+          <option value="name-desc">Name (Z–A)</option>
+          <option value="price-asc">Preis (niedrig–hoch)</option>
+          <option value="price-desc">Preis (hoch–niedrig)</option>
+        </select>
+      </div>
+      <div class="col-md-3 text-end">
+        <span class="text-muted small">Treffer: <b id="count">0</b></span>
+      </div>
+    </div>
+    <div id="tagbar" class="mt-3"></div>
+  </div>
+</header>
+
+<main class="container pb-5">
+  <div id="cards" class="row g-3"></div>
+</main>
+
+<footer class="text-center text-muted py-4 border-top">© 2025 SmartAssist Robotics</footer>
+
+<!-- Detail-Modal -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <a id="modalGo" class="btn btn-gradient text-white" href="#" target="_blank" rel="noopener">Zur Quelle</a>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sticky-actions">
+  <button class="fab" onclick="backToTop()" title="Nach oben"><i class="bi bi-arrow-up"></i></button>
+  <button class="fab" onclick="toggleTheme()" title="Hell/Dunkel"><i id="themeIcon" class="bi"></i></button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

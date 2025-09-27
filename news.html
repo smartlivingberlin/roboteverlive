@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News – SmartAssist Robotics</title>
+  <meta name="description" content="Messen, Forschung, Trends aus Assistenz-Robotik & KI.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">SmartAssist</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="katalog.html">Katalog</a>
+      <a class="nav-link active" href="news.html">News</a>
+      <a class="nav-link" href="partner.html">Partner</a>
+      <a class="nav-link" href="kontakt.html">Kontakt</a>
+      <button class="btn btn-sm btn-outline-secondary ms-2" onclick="toggleTheme()"><i id="themeIcon" class="bi"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="py-4 hero">
+  <div class="container">
+    <h1 class="h3 fw-bold">News, Messen & Forschung</h1>
+    <p class="text-muted">Aktuelle Highlights – später automatisierte Feeds & Berichte.</p>
+  </div>
+</header>
+
+<main class="container pb-5">
+  <div id="carouselNews" class="carousel slide mb-4" data-bs-ride="carousel" data-aos="fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 rounded" src="https://picsum.photos/seed/expo/1200/480" alt="Expo">
+        <div class="p-3"><h5>China Robot Show 2025 – Service & Pflege im Fokus</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 rounded" src="https://picsum.photos/seed/ifr/1200/480" alt="IFR">
+        <div class="p-3"><h5>IFR Trendbericht: Rekord-Installationen in Asien</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 rounded" src="https://picsum.photos/seed/humanoid/1200/480" alt="Humanoids">
+        <div class="p-3"><h5>Humanoide Demos – WRC Beijing</h5></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <div class="accordion mb-4" id="acc">
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#c1">Messe-Highlights</button></h2>
+      <div id="c1" class="accordion-collapse collapse show"><div class="accordion-body">Kurznotizen zu Ständen, Demos, Zertifizierungen – später Bilder & Links.</div></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c2">Forschung & Patente</button></h2>
+      <div id="c2" class="accordion-collapse collapse"><div class="accordion-body">Universitäten, Institute, Startups – leicht erklärt, mit Quellen.</div></div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c3">Markttrends</button></h2>
+      <div id="c3" class="accordion-collapse collapse"><div class="accordion-body">Alterung der Gesellschaft, Kostendruck, Personalmangel → hohe Nachfrage.</div></div>
+    </div>
+  </div>
+
+  <h5 class="mb-3">Event-Timeline</h5>
+  <div class="timeline">
+    <p><span class="dot"></span><b>Aug 2025:</b> World Robot Conference (Beijing)</p>
+    <p><span class="dot"></span><b>Sep 2025:</b> China Robot Show (Shanghai)</p>
+    <p><span class="dot"></span><b>Okt/Nov 2025:</b> ROSCon China (Shanghai)</p>
+  </div>
+</main>
+
+<footer class="text-center text-muted py-4 border-top">© 2025 SmartAssist Robotics</footer>
+
+<div class="sticky-actions">
+  <button class="fab" onclick="backToTop()" title="Nach oben"><i class="bi bi-arrow-up"></i></button>
+  <button class="fab" onclick="toggleTheme()" title="Hell/Dunkel"><i id="themeIcon" class="bi"></i></button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

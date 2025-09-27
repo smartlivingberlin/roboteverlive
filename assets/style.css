@@ -1,0 +1,43 @@
+:root{
+  --bg:#f7f9fc; --fg:#1c2331; --muted:#6c757d; --brand:#4e8cff; --brand-2:#7e5eff;
+  --card:#ffffff; --border:#e9eef5; --shadow:0 10px 30px rgba(18,38,63,.08);
+}
+[data-theme="dark"]{
+  --bg:#0e1420; --fg:#e9eef5; --muted:#aab4c3; --card:#121a28; --border:#1f2a3b;
+  --brand:#6aa8ff; --brand-2:#a389ff; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+html,body{background:var(--bg); color:var(--fg)}
+a{color:var(--brand)}
+.navbar{backdrop-filter: blur(8px)}
+.navbar .nav-link{margin-right:.5rem}
+.hero{
+  background: radial-gradient(1200px 600px at 15% 20%, rgba(78,140,255,.25), transparent 60%),
+              radial-gradient(800px 500px at 85% 30%, rgba(126,94,255,.20), transparent 60%),
+              linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,0));
+  border-bottom:1px solid var(--border);
+}
+.hero .badge{background:linear-gradient(90deg,var(--brand),var(--brand-2));}
+.btn-gradient{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  border:none; box-shadow: var(--shadow);
+}
+.btn-gradient:hover{opacity:.95}
+.section-title{margin:2rem 0 1rem}
+.card{background:var(--card); border:1px solid var(--border); box-shadow:var(--shadow); transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-2px); box-shadow:0 14px 40px rgba(18,38,63,.12)}
+.kpi{font-weight:700; font-size:1.8rem}
+.tag{display:inline-block; padding:.25rem .6rem; border:1px solid var(--border); border-radius:999px; margin:.2rem; cursor:pointer; user-select:none}
+.tag.active{background:var(--brand); color:#fff; border-color:transparent}
+.sticky-actions{position:fixed; right:16px; bottom:16px; display:flex; gap:.5rem; z-index:1000}
+.fab{width:46px; height:46px; border-radius:50%; display:grid; place-items:center; box-shadow:var(--shadow); border:1px solid var(--border); background:var(--card); cursor:pointer}
+.fab:hover{transform:translateY(-2px)}
+footer{background:var(--card)}
+.ticker{white-space:nowrap; overflow:hidden; border-top:1px dashed var(--border); border-bottom:1px dashed var(--border)}
+.ticker .inner{display:inline-block; padding:.4rem 0; animation:ticker 22s linear infinite}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.carousel-item{min-height:260px}
+.timeline{border-left:2px solid var(--border); padding-left:1rem}
+.timeline .dot{width:12px;height:12px;border-radius:50%;background:var(--brand);display:inline-block;margin-right:.5rem}
+.form-control, .form-select{background:var(--card); color:var(--fg); border:1px solid var(--border)}
+.form-control::placeholder{color:var(--muted)}
+.badge-soft{background:rgba(78,140,255,.12); color:var(--brand); border:1px solid rgba(78,140,255,.3)}

@@ -1,0 +1,12 @@
+[
+  {"name":"Küchenarm A1","category":"Alltag & Zuhause","helps":"Rühren, Schneiden, einfache Kochschritte","region":"CN/EU","price_range":"€€€","link":"","image":"https://picsum.photos/seed/kitchenarm/800/500","tags":["Küche","Assistenz","Smart-Home"]},
+  {"name":"Service-Roboter S2","category":"Alltag & Zuhause","helps":"Serviert, trägt Tabletts, bringt Gegenstände","region":"Global","price_range":"€€","link":"","image":"https://picsum.photos/seed/service/800/500","tags":["Service","Transport"]},
+  {"name":"Exoskelett G1 Light","category":"Gesundheit & Pflege","helps":"Unterstützt beim Gehen & Aufstehen","region":"CN/EU","price_range":"€€€","link":"","image":"https://picsum.photos/seed/exo1/800/500","tags":["Exoskelett","Mobilität"]},
+  {"name":"Smart-Rollator SafeWalk","category":"Gesundheit & Pflege","helps":"Sturzsensoren, Bremsassist, GPS-Option","region":"EU","price_range":"€€","link":"","image":"https://picsum.photos/seed/rollator/800/500","tags":["Rollator","Sicherheit"]},
+  {"name":"Seh-Assistent V-Reader","category":"Sinne & Barrierefreiheit","helps":"KI liest Text vor, erkennt Objekte/Gesichter","region":"Global","price_range":"€€","link":"","image":"https://picsum.photos/seed/vision/800/500","tags":["Sehen","KI"]},
+  {"name":"Hör-Helfer BeamFocus","category":"Sinne & Barrierefreiheit","helps":"Richtet Sprache aus lauter Umgebung heraus","region":"Global","price_range":"€€","link":"","image":"https://picsum.photos/seed/audio/800/500","tags":["Hören","Audio"]},
+  {"name":"Swim-Assist W1","category":"Sport & Reha","helps":"Schwimm-Feedback, Sicherheitsalarm","region":"EU/CN","price_range":"€€","link":"","image":"https://picsum.photos/seed/swim/800/500","tags":["Sport","Schwimmen"]},
+  {"name":"Gait-Tracker RehabX","category":"Sport & Reha","helps":"Gangbild-Analyse, Balance-Training","region":"Global","price_range":"€€","link":"","image":"https://picsum.photos/seed/gait/800/500","tags":["Reha","Analyse"]},
+  {"name":"ROS Lernkit R1","category":"Bildung & Maker","helps":"Einfaches Robotik-Kit für ROS-Übungen","region":"Global","price_range":"€","link":"","image":"https://picsum.photos/seed/ros/800/500","tags":["ROS","DIY"]},
+  {"name":"Telepräsenz-Bot HomeVisit","category":"Alltag & Zuhause","helps":"Video-Besuche, Erinnerungen, Fernsteuerung","region":"Global","price_range":"€€","link":"","image":"https://picsum.photos/seed/tele/800/500","tags":["Telepräsenz","Kommunikation"]}
+]
