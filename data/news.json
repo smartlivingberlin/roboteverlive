@@ -1,5 +1,26 @@
 [
-  {"title":"China Robot Show 2025 – Service & Pflege im Fokus","date":"2025-09-23","link":"https://example.com/ciif","summary":"Viele Demos zu Exoskeletten, Küchen-Assistenz, Telepräsenz."},
-  {"title":"IFR Trendbericht: Rekord-Installationen in Asien","date":"2025-09-10","link":"https://example.com/ifr","summary":"China bleibt Leitmarkt – starkes Wachstum bei Service-Robotern."},
-  {"title":"Humanoide Demos auf der WRC Beijing","date":"2025-08-12","link":"https://example.com/wrc","summary":"Sport- und Pflege-Szenarien, neue Sensorik & Greifer."}
+  {
+    "title": "Pilotprojekt Pflegeheim Berlin",
+    "date": "2025-10-02",
+    "link": "https://beispiel.de",
+    "summary": "Erste Ergebnisse mit Exoskeletten"
+  },
+  {
+    "title": "China Robot Show 2025 – Service & Pflege im Fokus",
+    "date": "2025-09-23",
+    "link": "https://example.com/ciif",
+    "summary": "Viele Demos zu Exoskeletten, Küchen-Assistenz, Telepräsenz."
+  },
+  {
+    "title": "IFR Trendbericht: Rekord-Installationen in Asien",
+    "date": "2025-09-10",
+    "link": "https://example.com/ifr",
+    "summary": "China bleibt Leitmarkt – starkes Wachstum bei Service-Robotern."
+  },
+  {
+    "title": "Humanoide Demos auf der WRC Beijing",
+    "date": "2025-08-12",
+    "link": "https://example.com/wrc",
+    "summary": "Sport- und Pflege-Szenarien, neue Sensorik & Greifer."
+  }
 ]
