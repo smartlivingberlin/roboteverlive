@@ -28,7 +28,7 @@
     <div id="saBody" class="sa-body"></div>
     <div class="sa-setup" id="saSetup" style="display:none">
       <div><strong>Hugging Face Token</strong> (bleibt nur in deinem Browser gespeichert)</div>
-      <input id="saTok" type="password" placeholder="hf_xxx…" style="width:100%;margin:6px 0;padding:6px">
+      <input id="saTok" type="password" placeholder="hf-token-hier…" style="width:100%;margin:6px 0;padding:6px">
       <button id="saSave" class="btn btn-sm btn-primary">Speichern</button>
       <button id="saClear" class="btn btn-sm btn-outline-secondary">Löschen</button>
       <div id="saInfo" style="margin-top:6px;color:#666"></div>
