@@ -51,3 +51,12 @@
   document.getElementById('sab_send').addEventListener('click', send);
   document.getElementById('sab_input').addEventListener('keydown', e=>{ if(e.key==='Enter') send();});
 })();
+// --- Cleanup: entferne alte HF-Token-Karte, falls sie im HTML steckt ---
+try {
+  const all = document.querySelectorAll('div,section,form,main,article');
+  for (const el of all) {
+    if (el && el.textContent && /Hugging\s*Face\s*Token/i.test(el.textContent)) {
+      el.remove();
+    }
+  }
+} catch (e) { /* ignore */ }
