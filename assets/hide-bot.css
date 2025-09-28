@@ -1,0 +1,5 @@
+/* Bot-Fenster/Launcher hart ausblenden */
+#smartassist-weblm,
+#smartassist-bot-v2,
+.sab,
+.sab * { display: none !important; visibility: hidden !important; }
