@@ -1,0 +1,34 @@
+#sa-bot-launcher{
+  position:fixed; right:16px; bottom:16px; width:56px; height:56px;
+  border-radius:50%; border:none; font-size:24px; cursor:pointer;
+  box-shadow:0 6px 16px rgba(0,0,0,.2); background:#2b65ff; color:#fff; z-index:9999;
+}
+#sa-bot-box{
+  position:fixed; right:16px; bottom:84px; width:min(360px, 92vw); height:min(520px, 65vh);
+  box-shadow:0 10px 30px rgba(0,0,0,.24); border-radius:12px; overflow:hidden;
+  background:#fff; display:none; flex-direction:column; z-index:9999; border:1px solid rgba(0,0,0,.06);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+#sa-bot-box.open{ display:flex; }
+.sa-bot-head{
+  padding:10px 12px; background:#2b65ff; color:#fff; display:flex; align-items:center; justify-content:space-between;
+}
+.sa-bot-close{
+  background:transparent; border:none; color:#fff; font-size:18px; cursor:pointer; padding:4px 8px;
+}
+#sa-bot-wrap{ display:flex; flex:1; flex-direction:column; }
+.sa-bot-log{
+  flex:1; overflow:auto; padding:12px; background:#f6f8fe;
+}
+.sa-bot-msg{ margin:6px 0; padding:8px 10px; border-radius:8px; line-height:1.35; }
+.sa-bot-msg.me{ background:#e7f0ff; align-self:flex-end; max-width:88%; }
+.sa-bot-msg.bot{ background:#fff; border:1px solid rgba(0,0,0,.08); max-width:92%; }
+.sa-bot-inputrow{
+  display:flex; gap:8px; padding:10px; border-top:1px solid rgba(0,0,0,.06); background:#fff;
+}
+#sa-bot-input{
+  flex:1; padding:10px 12px; border:1px solid rgba(0,0,0,.15); border-radius:8px; font-size:14px;
+}
+#sa-bot-send{
+  padding:10px 12px; border:none; background:#2b65ff; color:#fff; border-radius:8px; cursor:pointer;
+}
