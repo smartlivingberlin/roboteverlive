@@ -65,3 +65,10 @@ footer{background:var(--card)}
 /* Tilt */
 .tilt{ transform-style:preserve-3d; transition:transform .15s ease }
 .tilt:hover{ transform:perspective(800px) rotateX(3deg) rotateY(-3deg) translateY(-2px) }
+
+/* --- HF-Token Popup verstecken (Notlösung) --- */
+.hf-token-card,
+#hf-token-card,
+[data-widget="hf-token-card"]{
+  display: none !important;
+}
