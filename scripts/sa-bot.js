@@ -60,3 +60,12 @@ try {
     }
   }
 } catch (e) { /* ignore */ }
+// --- Cleanup: entferne alte HF-Token-Karte, falls sie im HTML steckt ---
+try {
+  const all = document.querySelectorAll('div,section,form,main,article');
+  for (const el of all) {
+    if (el && el.textContent && /Hugging\s*Face\s*Token/i.test(el.textContent)) {
+      el.remove();
+    }
+  }
+} catch (e) { /* ignore */ }
