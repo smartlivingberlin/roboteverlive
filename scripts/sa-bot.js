@@ -1,124 +1,65 @@
-/**
- * SmartAssist Web-Bot (ohne Account/Token)
- * - versucht erst WebLLM (lokales LLM im Browser)
- * - wenn nicht verfügbar: einfacher FAQ-Fallback
- */
-const WIDGET_ID = "smartassist-webllm";
-if (!document.getElementById(WIDGET_ID)) {
-  const box = document.createElement("div");
-  box.id = WIDGET_ID;
-  box.innerHTML = `
+(function () {
+  const ID='smartassist-weblm';
+  if (document.getElementById(ID)) return;
+  const box=document.createElement('div');
+  box.id=ID;
+  box.innerHTML=`
   <style>
-    #smartassist-webllm{position:fixed;right:16px;bottom:16px;width:min(360px,95vw);height:min(65vh,520px);z-index:9999;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;}
-    .sab_head{background:#2b65ff;color:#fff;padding:10px 12px;border-radius:10px 10px 0 0;display:flex;align-items:center;justify-content:space-between}
-    .sab_body{background:#fff;border:1px solid rgba(0,0,0,.08);border-top:0;height:calc(100% - 46px);display:flex;flex-direction:column;border-radius:0 0 10px 10px;overflow:hidden}
-    .sab_log{flex:1;overflow:auto;padding:12px;background:#fafafe}
-    .sab_msg{margin:8px 0;padding:10px 12px;border-radius:10px;max-width:90%}
-    .sab_msg.user{background:#e9f0ff;margin-left:auto}
-    .sab_msg.bot{background:#fff;border:1px solid rgba(0,0,0,.06)}
-    .sab_input{display:flex;gap:8px;border-top:1px solid rgba(0,0,0,.06);padding:10px;background:#fff}
-    .sab_input input{flex:1;padding:10px;border:1px solid rgba(0,0,0,.2);border-radius:8px}
-    .sab_input button{padding:10px 14px;border-radius:8px;border:0;background:#2b65ff;color:#fff;cursor:pointer}
-    .sab_hint{font-size:12px;color:#666;padding:0 12px 8px}
+    #smartassist-weblm{position:fixed;right:16px;bottom:16px;width:320px;max-width:92vw;
+      height:min(68vh,560px);z-index:9999;font-family:system-ui,-apple-system,"Segoe UI",
+      Roboto,Arial,sans-serif}
+    .sab{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid rgba(0,0,0,.08);
+      border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.1);overflow:hidden}
+    .sab_head{background:#0d6efd;color:#fff;padding:10px 12px;font-weight:600;display:flex;
+      align-items:center;justify-content:space-between}
+    .sab_head .sab_status{font-weight:400;background:rgba(255,255,255,.18);padding:2px 8px;border-radius:6px}
+    .sab_log{flex:1;overflow:auto;background:#f8fafc;padding:12px}
+    .msg{margin:8px 0;padding:8px 12px;border-radius:8px;max-width:90%}
+    .m_you{background:#e7f0ff;border:1px solid rgba(13,110,253,.25)}
+    .m_bot{background:#fff;border:1px solid rgba(0,0,0,.08)}
+    .sab_inputrow{display:flex;gap:8px;padding:10px;border-top:1px solid rgba(0,0,0,.06);background:#fff}
+    .sab_inputrow input{flex:1;padding:10px 12px;border:1px solid rgba(0,0,0,.18);border-radius:8px}
+    .sab_inputrow button{padding:10px 12px;border:0;border-radius:8px;background:#0d6efd;color:#fff;cursor:pointer}
+    .sab_inputrow button:active{transform:translateY(1px)}
   </style>
-  <div class="sab_head"><b>SmartAssist Bot</b><span id="sab_status">lädt…</span></div>
-  <div class="sab_body">
-    <div class="sab_hint">Läuft lokal im Browser – keine Anmeldung, keine Tokens.</div>
-    <div id="sab_log" class="sab_log"></div>
-    <div class="sab_input">
-      <input id="sab_in" type="text" placeholder="Frage eingeben und Enter drücken…">
+  <div class="sab">
+    <div class="sab_head"><span>SmartAssist Bot</span><span class="sab_status">bereit (FAQ)</span></div>
+    <div class="sab_log" id="sab_log"></div>
+    <div class="sab_inputrow">
+      <input id="sab_input" type="text" placeholder="Frage eingeben und Enter drücken…">
       <button id="sab_send">Senden</button>
     </div>
   </div>`;
   document.body.appendChild(box);
-}
 
-const $log   = document.getElementById("sab_log");
-const $in    = document.getElementById("sab_in");
-const $send  = document.getElementById("sab_send");
-const $stat  = document.getElementById("sab_status");
-
-function addMsg(text, who="bot"){
-  const el = document.createElement("div");
-  el.className = `sab_msg ${who}`;
-  el.textContent = text;
-  $log.appendChild(el);
-  $log.scrollTop = $log.scrollHeight;
-}
-
-function setStatus(text){ $stat.textContent = text; }
-
-let engine = null;       // WebLLM Engine oder null
-let ready  = false;      // bereit zum Antworten
-let usingLLM = false;    // true wenn WebLLM aktiv
-
-async function initLLM(){
-  try {
-    // dynamisch laden – keine Bundler nötig
-    const m = await import("https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.48/dist/index.min.js");
-    setStatus("Modell lädt… (einmalig)");
-    // sehr kleines Modell für schwächere Rechner
-    engine = await m.CreateMLCEngine({
-      model: "Qwen2.5-0.5B-Instruct-q4f32_1-MLC"  // ~0.5B, klein & schnell
-    }, { initProgressCallback: (p) => setStatus(`Lade: ${Math.round((p.progress||0)*100)}%`) });
-    usingLLM = true;
-    ready = true;
-    setStatus("bereit");
-    addMsg("Hallo! Ich laufe lokal im Browser (WebLLM). Frag mich gern etwas zu Robotik & KI.");
-  } catch(e){
-    console.warn("WebLLM init failed, fallback to FAQ:", e);
-    usingLLM = false;
-    ready = true;
-    setStatus("bereit (FAQ)");
-    addMsg("WebLLM nicht verfügbar – ich antworte mit einer kleinen eingebauten FAQ. (Firefox/WebGPU hilft für das volle Modell.)");
+  const log=document.getElementById('sab_log');
+  function add(who,text){
+    const div=document.createElement('div');
+    div.className='msg ' + (who==='you'?'m_you':'m_bot');
+    div.textContent=text;
+    log.appendChild(div);
+    log.scrollTop=log.scrollHeight;
   }
-}
 
-async function askLLM(prompt){
-  const res = await engine.chat.completions.create({
-    messages: [
-      { role: "system", content: "Antworte kurz und hilfreich auf Deutsch." },
-      { role: "user", content: prompt }
-    ],
-    temperature: 0.7,
-    stream: false
-  });
-  return res.choices?.[0]?.message?.content?.trim() || "(keine Antwort)";
-}
-
-function askFAQ(q){
-  const s = q.toLowerCase();
-  if (s.includes("katalog") || s.includes("produkte")) {
-    return "Zum Katalog: Öffne oben „Katalog“. Dort findest du die Produkte und Filter.";
+  function answer(msg){
+    const q=msg.toLowerCase();
+    if(q.includes('hallo')||q.includes('hi')) return 'Hallo! Frag mich zu Robotik, KI oder „Kontakt“.';
+    if(q.includes('robot')) return 'Roboter unterstützen im Alltag. Schau in den Katalog für Beispiele.';
+    if(q.includes('ki')||q.includes('ai')) return 'KI = Künstliche Intelligenz. Sie lernt aus Daten und hilft beim Entscheiden.';
+    if(q.includes('kontakt')) return 'Nutze oben im Menü „Kontakt“.';
+    if(q.includes('hilfe')||q.includes('faq')) return 'Beispiele: „Robotik“, „KI“, „Kontakt“ oder „hallo“.';
+    return 'Ich bin eine kleine Offline-Demo ohne Internet/Token. Versuch: „Robotik“, „KI“, „Kontakt“ oder „hallo“.';
   }
-  if (s.includes("kontakt") || s.includes("email")) {
-    return "Kontakt findest du oben im Menü „Kontakt“. Alternativ Mail an: info@smartassist.de (Platzhalter).";
-  }
-  if (s.includes("token") || s.includes("hugging")) {
-    return "Kein Token nötig – dieser Bot läuft lokal im Browser (WebLLM).";
-  }
-  return "Dazu habe ich gerade keine spezielle Antwort. Formuliere die Frage anders oder nutze das Menü oben.";
-}
 
-async function send(){
-  const msg = $in.value.trim();
-  if(!msg || !ready) return;
-  $in.value = "";
-  addMsg(msg, "user");
-  setStatus("denke nach…");
-  try{
-    let reply = usingLLM ? await askLLM(msg) : askFAQ(msg);
-    addMsg(reply, "bot");
-  }catch(e){
-    addMsg("Fehler: "+e.message, "bot");
-  }finally{
-    setStatus("bereit");
+  async function send(){
+    const inp=document.getElementById('sab_input');
+    const msg=inp.value.trim();
+    if(!msg) return;
+    add('you', msg);
+    inp.value='';
+    setTimeout(()=>add('bot', answer(msg)), 150);
   }
-}
 
-$send.addEventListener("click", send);
-$in.addEventListener("keydown", (e)=>{ if(e.key==="Enter") send(); });
-
-// Start
-initLLM();
+  document.getElementById('sab_send').addEventListener('click', send);
+  document.getElementById('sab_input').addEventListener('keydown', e=>{ if(e.key==='Enter') send();});
+})();
