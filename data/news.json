@@ -1,32 +1,44 @@
 [
   {
-    "title": "Testeintrag",
-    "date": "2025-09-28",
-    "link": "https://example.com",
-    "summary": "Kurztext für News"
+    "title": "Quantum chips just proved they’re ready for the real world",
+    "link": "https://www.sciencedaily.com/releases/2025/09/250927031230.htm",
+    "date": "Sun, 28 Sep 2025 07:00:14 EDT",
+    "summary": "Diraq has shown that its silicon-based quantum chips can maintain world-class accuracy even when mass-produced in semiconductor foundries. Achieving over 99% fidelity in two-qubit operations, the breakthrough clears a major hurdle toward utility-scale quantum computing. Silicon’s compatibility with existing chipmaking processes means building powerful quantum processors could become both cost-effective and scalable.",
+    "source": "ScienceDaily AI & Robotics"
   },
   {
-    "title": "Pilotprojekt Pflegeheim Berlin",
-    "date": "2025-10-02",
-    "link": "https://beispiel.de",
-    "summary": "Erste Ergebnisse mit Exoskeletten"
+    "title": "Caltech’s massive 6,100-qubit array brings the quantum future closer",
+    "link": "https://www.sciencedaily.com/releases/2025/09/250925025341.htm",
+    "date": "Thu, 25 Sep 2025 05:09:25 EDT",
+    "summary": "Caltech scientists have built a record-breaking array of 6,100 neutral-atom qubits, a critical step toward powerful error-corrected quantum computers. The qubits maintained long-lasting superposition and exceptional accuracy, even while being moved within the array. This balance of scale and stability points toward the next milestone: linking qubits through entanglement to unlock true quantum computation.",
+    "source": "ScienceDaily AI & Robotics"
   },
   {
-    "title": "China Robot Show 2025 – Service & Pflege im Fokus",
-    "date": "2025-09-23",
-    "link": "https://example.com/ciif",
-    "summary": "Viele Demos zu Exoskeletten, Küchen-Assistenz, Telepräsenz."
+    "title": "AI-powered smart bandage heals wounds 25% faster",
+    "link": "https://www.sciencedaily.com/releases/2025/09/250924012232.htm",
+    "date": "Wed, 24 Sep 2025 10:37:47 EDT",
+    "summary": "A new wearable device, a-Heal, combines AI, imaging, and bioelectronics to speed up wound recovery. It continuously monitors wounds, diagnoses healing stages, and applies personalized treatments like medicine or electric fields. Preclinical tests showed healing about 25% faster than standard care, highlighting potential for chronic wound therapy.",
+    "source": "ScienceDaily AI & Robotics"
   },
   {
-    "title": "IFR Trendbericht: Rekord-Installationen in Asien",
-    "date": "2025-09-10",
-    "link": "https://example.com/ifr",
-    "summary": "China bleibt Leitmarkt – starkes Wachstum bei Service-Robotern."
+    "title": "Scientists just made atoms talk to each other inside silicon chips",
+    "link": "https://www.sciencedaily.com/releases/2025/09/250920214318.htm",
+    "date": "Sun, 21 Sep 2025 02:01:58 EDT",
+    "summary": "Researchers at UNSW have found a way to make atomic nuclei communicate through electrons, allowing them to achieve entanglement at scales used in today’s computer chips. This breakthrough brings scalable, silicon-based quantum computing much closer to reality.",
+    "source": "ScienceDaily AI & Robotics"
   },
   {
-    "title": "Humanoide Demos auf der WRC Beijing",
-    "date": "2025-08-12",
-    "link": "https://example.com/wrc",
-    "summary": "Sport- und Pflege-Szenarien, neue Sensorik & Greifer."
+    "title": "AI has no idea what it’s doing, but it’s threatening us all",
+    "link": "https://www.sciencedaily.com/releases/2025/09/250907172635.htm",
+    "date": "Sun, 07 Sep 2025 21:23:41 EDT",
+    "summary": "Artificial intelligence is reshaping law, ethics, and society at a speed that threatens fundamental human dignity. Dr. Maria Randazzo of Charles Darwin University warns that current regulation fails to protect rights such as privacy, autonomy, and anti-discrimination. The “black box problem” leaves people unable to trace or challenge AI decisions that may harm them.",
+    "source": "ScienceDaily AI & Robotics"
+  },
+  {
+    "title": "Caltech breakthrough makes quantum memory last 30 times longer",
+    "link": "https://www.sciencedaily.com/releases/2025/08/250827234137.htm",
+    "date": "Wed, 27 Aug 2025 23:49:15 EDT",
+    "summary": "While superconducting qubits are great at fast calculations, they struggle to store information for long periods. A team at Caltech has now developed a clever solution: converting quantum information into sound waves. By using a tiny device that acts like a miniature tuning fork, the researchers were able to extend quantum memory lifetimes up to 30 times longer than before. This breakthrough could pave the way toward practical, scalable quantum computers that can both compute and remember.",
+    "source": "ScienceDaily AI & Robotics"
   }
 ]
