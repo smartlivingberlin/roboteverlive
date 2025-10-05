@@ -1,5 +1,12 @@
 [
   {
+    "title": "These little robots literally walk on water",
+    "link": "https://www.sciencedaily.com/releases/2025/10/251003033930.htm",
+    "date": "Sat, 04 Oct 2025 10:26:35 EDT",
+    "summary": "HydroSpread, a breakthrough fabrication method, lets scientists build ultrathin soft robots directly on water. These tiny, insect-inspired machines could transform robotics, healthcare, and environmental monitoring.",
+    "source": "ScienceDaily AI & Robotics"
+  },
+  {
     "title": "Quantum chips just proved they’re ready for the real world",
     "link": "https://www.sciencedaily.com/releases/2025/09/250927031230.htm",
     "date": "Sun, 28 Sep 2025 07:00:14 EDT",
@@ -32,13 +39,6 @@
     "link": "https://www.sciencedaily.com/releases/2025/09/250907172635.htm",
     "date": "Sun, 07 Sep 2025 21:23:41 EDT",
     "summary": "Artificial intelligence is reshaping law, ethics, and society at a speed that threatens fundamental human dignity. Dr. Maria Randazzo of Charles Darwin University warns that current regulation fails to protect rights such as privacy, autonomy, and anti-discrimination. The “black box problem” leaves people unable to trace or challenge AI decisions that may harm them.",
-    "source": "ScienceDaily AI & Robotics"
-  },
-  {
-    "title": "Caltech breakthrough makes quantum memory last 30 times longer",
-    "link": "https://www.sciencedaily.com/releases/2025/08/250827234137.htm",
-    "date": "Wed, 27 Aug 2025 23:49:15 EDT",
-    "summary": "While superconducting qubits are great at fast calculations, they struggle to store information for long periods. A team at Caltech has now developed a clever solution: converting quantum information into sound waves. By using a tiny device that acts like a miniature tuning fork, the researchers were able to extend quantum memory lifetimes up to 30 times longer than before. This breakthrough could pave the way toward practical, scalable quantum computers that can both compute and remember.",
     "source": "ScienceDaily AI & Robotics"
   }
 ]
