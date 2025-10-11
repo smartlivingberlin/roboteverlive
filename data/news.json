@@ -1,5 +1,12 @@
 [
   {
+    "title": "Why GPS fails in cities. And how it was brilliantly fixed",
+    "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
+    "date": "Thu, 09 Oct 2025 03:31:24 EDT",
+    "summary": "Our everyday GPS struggles in “urban canyons,” where skyscrapers bounce satellite signals, confusing even advanced navigation systems. NTNU scientists created SmartNav, combining satellite corrections, wave analysis, and Google’s 3D building data for remarkable precision. Their method achieved accuracy within 10 centimeters during testing. The breakthrough could make reliable urban navigation accessible and affordable worldwide.",
+    "source": "ScienceDaily AI & Robotics"
+  },
+  {
     "title": "These little robots literally walk on water",
     "link": "https://www.sciencedaily.com/releases/2025/10/251003033930.htm",
     "date": "Sat, 04 Oct 2025 10:26:35 EDT",
@@ -32,13 +39,6 @@
     "link": "https://www.sciencedaily.com/releases/2025/09/250920214318.htm",
     "date": "Sun, 21 Sep 2025 02:01:58 EDT",
     "summary": "Researchers at UNSW have found a way to make atomic nuclei communicate through electrons, allowing them to achieve entanglement at scales used in today’s computer chips. This breakthrough brings scalable, silicon-based quantum computing much closer to reality.",
-    "source": "ScienceDaily AI & Robotics"
-  },
-  {
-    "title": "AI has no idea what it’s doing, but it’s threatening us all",
-    "link": "https://www.sciencedaily.com/releases/2025/09/250907172635.htm",
-    "date": "Sun, 07 Sep 2025 21:23:41 EDT",
-    "summary": "Artificial intelligence is reshaping law, ethics, and society at a speed that threatens fundamental human dignity. Dr. Maria Randazzo of Charles Darwin University warns that current regulation fails to protect rights such as privacy, autonomy, and anti-discrimination. The “black box problem” leaves people unable to trace or challenge AI decisions that may harm them.",
     "source": "ScienceDaily AI & Robotics"
   }
 ]
