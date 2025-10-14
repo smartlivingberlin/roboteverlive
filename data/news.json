@@ -1,5 +1,12 @@
 [
   {
+    "title": "90% of science is lost. This new AI just found it",
+    "link": "https://www.sciencedaily.com/releases/2025/10/251013040314.htm",
+    "date": "Mon, 13 Oct 2025 08:46:51 EDT",
+    "summary": "Vast amounts of valuable research data remain unused, trapped in labs or lost to time. Frontiers aims to change that with FAIR² Data Management, a groundbreaking AI-driven system that makes datasets reusable, verifiable, and citable. By uniting curation, compliance, peer review, and interactive visualization in one platform, FAIR² empowers scientists to share their work responsibly and gain recognition.",
+    "source": "ScienceDaily AI & Robotics"
+  },
+  {
     "title": "Why GPS fails in cities. And how it was brilliantly fixed",
     "link": "https://www.sciencedaily.com/releases/2025/10/251009033124.htm",
     "date": "Thu, 09 Oct 2025 03:31:24 EDT",
@@ -32,13 +39,6 @@
     "link": "https://www.sciencedaily.com/releases/2025/09/250924012232.htm",
     "date": "Wed, 24 Sep 2025 10:37:47 EDT",
     "summary": "A new wearable device, a-Heal, combines AI, imaging, and bioelectronics to speed up wound recovery. It continuously monitors wounds, diagnoses healing stages, and applies personalized treatments like medicine or electric fields. Preclinical tests showed healing about 25% faster than standard care, highlighting potential for chronic wound therapy.",
-    "source": "ScienceDaily AI & Robotics"
-  },
-  {
-    "title": "Scientists just made atoms talk to each other inside silicon chips",
-    "link": "https://www.sciencedaily.com/releases/2025/09/250920214318.htm",
-    "date": "Sun, 21 Sep 2025 02:01:58 EDT",
-    "summary": "Researchers at UNSW have found a way to make atomic nuclei communicate through electrons, allowing them to achieve entanglement at scales used in today’s computer chips. This breakthrough brings scalable, silicon-based quantum computing much closer to reality.",
     "source": "ScienceDaily AI & Robotics"
   }
 ]
