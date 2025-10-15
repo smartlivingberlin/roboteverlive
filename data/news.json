@@ -1,5 +1,12 @@
 [
   {
+    "title": "Scientists build artificial neurons that work like real ones",
+    "link": "https://www.sciencedaily.com/releases/2025/10/251013040335.htm",
+    "date": "Tue, 14 Oct 2025 01:31:23 EDT",
+    "summary": "UMass Amherst engineers have built an artificial neuron powered by bacterial protein nanowires that functions like a real one, but at extremely low voltage. This allows for seamless communication with biological cells and drastically improved energy efficiency. The discovery could lead to bio-inspired computers and wearable electronics that no longer need power-hungry amplifiers. Future applications may include sensors powered by sweat or devices that harvest electricity from thin air.",
+    "source": "ScienceDaily AI & Robotics"
+  },
+  {
     "title": "90% of science is lost. This new AI just found it",
     "link": "https://www.sciencedaily.com/releases/2025/10/251013040314.htm",
     "date": "Mon, 13 Oct 2025 08:46:51 EDT",
@@ -32,13 +39,6 @@
     "link": "https://www.sciencedaily.com/releases/2025/09/250925025341.htm",
     "date": "Thu, 25 Sep 2025 05:09:25 EDT",
     "summary": "Caltech scientists have built a record-breaking array of 6,100 neutral-atom qubits, a critical step toward powerful error-corrected quantum computers. The qubits maintained long-lasting superposition and exceptional accuracy, even while being moved within the array. This balance of scale and stability points toward the next milestone: linking qubits through entanglement to unlock true quantum computation.",
-    "source": "ScienceDaily AI & Robotics"
-  },
-  {
-    "title": "AI-powered smart bandage heals wounds 25% faster",
-    "link": "https://www.sciencedaily.com/releases/2025/09/250924012232.htm",
-    "date": "Wed, 24 Sep 2025 10:37:47 EDT",
-    "summary": "A new wearable device, a-Heal, combines AI, imaging, and bioelectronics to speed up wound recovery. It continuously monitors wounds, diagnoses healing stages, and applies personalized treatments like medicine or electric fields. Preclinical tests showed healing about 25% faster than standard care, highlighting potential for chronic wound therapy.",
     "source": "ScienceDaily AI & Robotics"
   }
 ]
