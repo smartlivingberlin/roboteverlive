@@ -1,0 +1,27 @@
+name: Create Release Draft
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'SemVer Tag (z.B. v1.0.0)'
+        required: true
+      title:
+        description: 'Release-Titel'
+        required: true
+permissions:
+  contents: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create draft release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.event.inputs.tag }}
+          release_name: ${{ github.event.inputs.title }}
+          draft: true
+          body: |
+            Siehe CHANGELOG.md und Commits seit dem letzten Tag.
